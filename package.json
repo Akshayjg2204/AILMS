@@ -1,0 +1,7 @@
+{
+  "name": "ailms-main",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo \"No build step defined. Please update the build script for your framework.\""
+}
+}

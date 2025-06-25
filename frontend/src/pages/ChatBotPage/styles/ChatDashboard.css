@@ -1,0 +1,41 @@
+.dashboard-container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px); /* Account for the navigation bar */
+    position: relative;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Account for open sidebar */
+  .dashboard-container .chat-area {
+    flex: 1;
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Add margin when sidebar is open on larger screens */
+  @media (min-width: 769px) {
+    .dashboard-container .sidebar.open + .chat-area {
+      margin-left: 280px; /* Match sidebar width */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+      height: calc(100vh - 60px);
+    }
+    
+    /* On mobile, sidebar overlays content when open */
+    .dashboard-container .sidebar.open {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  
