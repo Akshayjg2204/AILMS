@@ -20,6 +20,7 @@ function App() {
     <ResponsiveNavbar/>
     <Routes>
       <Route path="/" element={<Home/>} />
+      <Route path="/callback" element={<div>Loading...</div>} />
       <Route path="/aiassistant" element={<ChatDashboard/>}/>
       <Route path="/courses" element={<CourseList courses={coursesData} />} />
       <Route path="/courses/:id" element={<CourseDetail courses={coursesData} />} />

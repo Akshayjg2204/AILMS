@@ -12,7 +12,15 @@ const providerConfig = {
   domain: config.domain,
   clientId: config.clientId,
   authorizationParams: {
-    redirect_uri: "https://ailms1.netlify.app",
+    redirect_uri: "https://ailms1.netlify.app/callback",
+    audience: config.audience,
+  },
+  onRedirectCallback: (appState) => {
+    window.history.replaceState(
+      {},
+      document.title,
+      appState?.returnTo || window.location.pathname
+    );
   },
 };
 
