@@ -1,8 +1,8 @@
-# 🧠 AILMS — AI-Powered Learning Management System
+# 🧠 AILMS — AI-Powered Learning Management System (Demo Platform)
 
 <div align="center">
   <p align="center">
-    <b>A next-generation full-stack EdTech platform leveraging OpenAI GPT models for adaptive tutoring, personalized course authoring, and student collaboration.</b><br>
+    <b>A next-generation full-stack EdTech demo platform leveraging OpenAI GPT models for adaptive tutoring, personalized course authoring, and student collaboration.</b><br>
     Engineered with React 19, Vite, Tailwind CSS v4, Node.js (Express), Python (FastAPI), and Auth0.
   </p>
 
