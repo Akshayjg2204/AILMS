@@ -1,7 +1,33 @@
 {
-  "name": "ailms-main",
+  "name": "ailms",
   "version": "1.0.0",
+  "private": false,
+  "description": "AILMS — AI-Powered Learning Management System utilizing GPT models for personalized education, intelligent course authoring, student progress analytics, and community collaboration.",
+  "author": {
+    "name": "Akshay Gaikwad",
+    "url": "https://stream-line.dev/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Akshayjg2204/AILMS.git"
+  },
+  "keywords": [
+    "ailms",
+    "learning-management-system",
+    "edtech",
+    "ai-tutor",
+    "openai",
+    "gpt-4",
+    "react-19",
+    "vite",
+    "express",
+    "fastapi",
+    "microservices",
+    "python"
+  ],
   "scripts": {
-    "build": "echo \"No build step defined. Please update the build script for your framework.\""
-}
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:dev": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build"
+  }
 }
